@@ -10,7 +10,7 @@ export default function Home() {
               <input type="text" placeholder='Paste URL here...' className="border border-primary-100 placeholder:text-primary-100 placeholder:text-xs p-4 rounded-xl focus:outline-none" />
               <button className="flex items-center justify-center space-x-4 bg-primary-400 rounded-full w-full text-white py-4 hover:bg-white hover:text-primary-400 hover:border hover:border-primary-400 transition ease-in-out">Trim URL <span><ImMagicWand /></span></button>
             </form>
-            <p>By clicking TrimURL, I agree to the <strong>Terms of Service, Privacy Policy</strong> and Use of Cookies.</p>
+            <p>By clicking Trim URL, I agree to the <strong>Terms of Service, Privacy Policy</strong> and Use of Cookies.</p>
           </div>
         </div>
       </div>
