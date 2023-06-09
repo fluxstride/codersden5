@@ -4,7 +4,7 @@ const Form = () => {
   return (
     <div className="form-gradient w-full">
       <div className="form-image w-full flex items-center px-6 justify-center py-20 md:px-0">
-        <div className="bg-white rounded-xl p-10 sm:w-1/2 max-w-1/3 text-primary-100 space-y-6 text-sm">
+        <div className="bg-white rounded-xl p-10 sm:w-1/2 lg:w-1/3 text-primary-100 space-y-6 text-sm">
           <form className="flex flex-col justify-between space-y-4">
             <input
               type="text"

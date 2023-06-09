@@ -17,3 +17,8 @@
   background-position: left bottom, right bottom;
   background-repeat: no-repeat;
 }
+
+.navbar-scroll {
+  height: 70px;
+  box-shadow: 0 4px 10px 2px #5c5b5b;
+}
