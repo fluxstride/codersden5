@@ -1,6 +1,8 @@
 import Form from "@/components/Form";
-import Link from "next/link";
 import Head from "next/head";
+import Hero from "@/components/Hero";
+import Faq from "@/components/Faq";
+import Cta from "@/components/Cta";
 
 export default function Home() {
   return (
@@ -13,8 +15,11 @@ export default function Home() {
         />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-between">
-        <Link href="/login">Go to Login</Link>
+        {/* <Link href="/login">Go to Login</Link> */}
+        <Hero />
         <Form />
+        <Faq />
+        <Cta />
       </main>
     </>
   );
