@@ -19,6 +19,7 @@ module.exports = {
         "primary-200": "#4991FF",
         "primary-300": "#0065FE",
         "primary-400": "#005AE2",
+        "bg-light": "#F9FBFD",
         "main-text": "#141414",
       },
     },

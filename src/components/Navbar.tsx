@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={` text-main-text flex items-center justify-between bg-white fixed w-full z-50 transition-all duration-500 ease-in-out ${
+      className={` text-main-text flex items-center justify-between bg-transparent fixed w-full z-50 transition-all duration-500 ease-in-out ${
         isScrolled ? "navbar-scroll" : ""
       }`}
     >
