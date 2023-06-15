@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className=" w-full">
       <div className="bg-[url('../assets/hero-bg.png')] bg-no-repeat bg-cover bg-center w-full py-20">
-        <div className="w-full max-w-4xl mx-auto text-center">
+        <div className="pt-10 w-full max-w-4xl mx-auto text-center">
           <h1 className="text-main-text text-4xl font-bold w-10/12 mx-auto leading-relaxed">
             Optimize Your Online Experience with Our Advanced{" "}
             <span className="text-primary-400">URL Shortening</span> Solution
@@ -33,29 +33,30 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="bg-bg-light w-full flex justify-evenly items-center">
+      <div className="bg-bg-light w-full flex justify-evenly items-center py-10">
         <p className="font-bold text-2xl">
           One Stop.
-          <br /> Four <span className="font-bold text-primary-400">Possibilities.</span>
+          <br /> Four{" "}
+          <span className="font-bold text-primary-400">Possibilities.</span>
         </p>
-        <p className="flex flex-col justify-center items-center">
-          <span>3M</span>
+        <p className="flex flex-col justify-center items-left">
+          <span className="font-bold text-xl">3M</span>
           <span>Active users</span>
         </p>
-        <p>
-          <span>60M</span>
+        <p className="flex flex-col justify-center items-left">
+          <span className="font-bold text-xl">60M</span>
           <span>
             Links & QR <br /> codes created
           </span>
         </p>
-        <p>
-          <span>1B</span>
+        <p className="flex flex-col justify-center items-left">
+          <span className="font-bold text-xl">1B</span>
           <span>
             Clicked & Scanned <br /> connections
           </span>
         </p>
-        <p>
-          <span>300k</span>
+        <p className="flex flex-col justify-center items-left">
+          <span className="font-bold text-xl">300k</span>
           <span>App Integrations</span>
         </p>
       </div>

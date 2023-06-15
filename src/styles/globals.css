@@ -8,6 +8,11 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+body{
+  color: #141414;
+  font-size: 14px;
+}
+
 .navbar-scroll {
   height: 70px;
   box-shadow: 0 4px 10px 2px #5c5b5b;

@@ -14,11 +14,11 @@ const Footer = () => {
         <div className="flex justify-between w-full max-w-7xl gap-4 mx-auto ">
           <div className="w-1/5 flex flex-col items-center space-y-4">
             <Image src={logo} alt="scissor" />
-            <div className="flex w-full justify-evenly text-2xl">
-              <AiOutlineTwitter />
-              <AiOutlineInstagram />
-              <AiFillLinkedin />
-              <AiFillFacebook />
+            <div className="flex w-full justify-evenly">
+              <AiOutlineTwitter className="text-2xl" />
+              <AiOutlineInstagram className="text-2xl" />
+              <AiFillLinkedin className="text-2xl" />
+              <AiFillFacebook className="text-2xl" />
             </div>
           </div>
           <div className="flex w-3/5 flex-col items-center justify-between gap-8">
