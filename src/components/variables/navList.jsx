@@ -14,7 +14,7 @@ export const navList = [
     ),
     href: "/features",
   },
-  { list: "Pricing", href: "/pricing" },
+  { list: "Pricing", href: "#pricing" },
   { list: "Analytics", href: "/anallytics" },
-  { list: "FAQs", href: "/faq" },
+  { list: "FAQs", href: "#faq" },
 ];

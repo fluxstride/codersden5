@@ -9,7 +9,7 @@ const Faq = () => {
   }
 
   return (
-    <section className="max-w-2xl mx-auto bg-color-bg_primary-500 rounded-lg space-y-12 p-6 md:px-16 md:rounded-3xl lg:max-w-4xl">
+    <section id="faq" className="max-w-2xl mx-auto bg-color-bg_primary-500 rounded-lg space-y-12 p-6 md:px-16 md:rounded-3xl lg:max-w-4xl">
       {faqs.map((faq, index) => (
         <div key={index}>
           <div className="accordion-item">

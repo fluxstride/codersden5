@@ -21,6 +21,8 @@ module.exports = {
         "primary-400": "#005AE2",
         "bg-light": "#F9FBFD",
         "main-text": "#141414",
+        "neutral-400": "#A0B1C0",
+        "neutral-500": "#5C6F7F",
       },
     },
   },

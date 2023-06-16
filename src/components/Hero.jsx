@@ -25,10 +25,10 @@ const Hero = () => {
             </button>
           </div>
           <div className="flex flex-col items-center w-1/2 mx-auto bg-bg-light border border-primary-100 rounded-xl p-8">
-            <Image src={links} alt="links" />
+            <Image src={links} alt="links" className="w-auto h-auto" />
             <p>
               Seamlessly transform your long URLs into concise and{" "}
-              <stromg>shareable links</stromg> with just few clicks.
+              <strong>shareable links</strong> with just few clicks.
             </p>
           </div>
         </div>

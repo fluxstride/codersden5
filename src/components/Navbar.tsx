@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={` text-main-text flex items-center justify-between bg-transparent fixed w-full z-50 transition-all duration-500 ease-in-out ${
+      className={`text-main-text flex items-center justify-between bg-transparent fixed w-full z-50 transition-all duration-500 ease-in-out ${
         isScrolled ? "navbar-scroll" : ""
       }`}
     >
@@ -39,33 +39,37 @@ const Navbar = () => {
         </div>
         <ul className="hidden lg:flex">
           {navList.map((text, index) => {
-              const isActive = router.asPath === text.href;
-           return (
-             <li
-               key={index}
-               className="px-4 py-2 cursor-pointer capitalize font-medium hover:scale-105"
-             >
-               <Link
-                 href={text.href}
-                 className={
-                   isActive
-                     ? "text-primary-300 flex items-center justify-center space-x-1"
-                     : "flex items-center justify-center space-x-1"
-                 }
-               >
-                 <span>{text.list}</span>
-                 <span>{text.icon}</span>
-               </Link>
-             </li>
-           );
-         } )}
+            const isActive = router.asPath === text.href;
+            return (
+              <li
+                key={index}
+                // className="px-4 py-2 cursor-pointer capitalize font-medium hover:scale-105"
+              >
+                <Link
+                  href={text.href}
+                  className={
+                    isActive
+                      ? "text-primary-300 flex items-center justify-center space-x-1 px-4 py-2 font-medium hover:scale-105"
+                      : "flex items-center justify-center space-x-1 px-4 py-2 cursor-pointer capitalize font-medium hover:scale-105"
+                  }
+                >
+                  <span>{text.list}</span>
+                  <span>{text.icon}</span>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <div className="hidden lg:flex items-center justify-between space-x-4 w-72">
           <button className="text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2">
-            Log in
+            <Link href="/login" className="w-full">
+              Log in
+            </Link>
           </button>
           <button className="text-white bg-primary-300 hover:bg-white hover:text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2">
-            Try for free
+            <Link href="/signup" className="w-full">
+              Try for free
+            </Link>
           </button>
         </div>
       </div>
@@ -83,17 +87,21 @@ const Navbar = () => {
                 key={index}
                 className="px-4 cursor-pointer capitalize py-6 text-4xl"
               >
-                <Link href="" onClick={() => navOpen(!nav)}>
+                <Link href={text.href} onClick={() => navOpen(!nav)}>
                   <span>{text.list}</span>
                 </Link>
               </li>
             ))}
             <div className="flex items-center flex-col justify-between space-y-4 w-72">
               <button className="text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2">
-                Log in
+                <Link href="/login" className="w-full">
+                  Log in
+                </Link>
               </button>
               <button className="text-white bg-primary-300 hover:bg-white hover:text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2">
-                Try for free
+                <Link href="/signup" className="w-full">
+                  Try for free
+                </Link>
               </button>
             </div>
           </ul>

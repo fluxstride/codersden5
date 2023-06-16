@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Welcome to Sciccors</title>
+        <title>Welcome to Scissor</title>
         <meta
           name="description"
           content=" Optimize Your Online Experience with Our Advanced URL Shortening Solution"

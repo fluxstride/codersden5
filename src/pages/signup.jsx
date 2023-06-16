@@ -3,16 +3,16 @@ import Head from "next/head";
 import { FcGoogle } from "react-icons/fc";
 import { DiApple } from "react-icons/di";
 
-const Login = () => {
+const Signup = () => {
   return (
     <>
       <Head>
-        <title>Log in to Scissor</title>
+        <title>Sign up on Scissor</title>
         <meta name="description" content="Log in with Google or Apple" />
       </Head>
       <div className="w-full grid place-content-center  bg-white">
         <div className="text-center mx-auto w-full max-w-md my-28 space-y-4">
-          <p className="text-neutral-500">Log in with:</p>
+          <p className="text-neutral-500">Sign up with:</p>
           <div className="flex items-center space-x-6 justify-center">
             <button className="flex space-x-1 bg-primary-400 px-4 py-2 text-white text-base items-center rounded">
               <FcGoogle className="text-xl" />
@@ -31,7 +31,12 @@ const Login = () => {
           <div className="flex flex-col justify-center space-y-5 w-full">
             <input
               type="email"
-              placeholder="Email address or username"
+              placeholder="Username"
+              className="border-2 border-primary-400 px-4 py-3 focus:outline-dashed  focus:outline-primary-400 placeholder:text-base placeholder:text-neutral-400 rounded-lg w-full"
+            />
+            <input
+              type="password"
+              placeholder="Email"
               className="border-2 border-primary-400 px-4 py-3 focus:outline-dashed  focus:outline-primary-400 placeholder:text-base placeholder:text-neutral-400 rounded-lg w-full"
             />
             <input
@@ -39,26 +44,30 @@ const Login = () => {
               placeholder="Password"
               className="border-2 border-primary-400 px-4 py-3 focus:outline-dashed  focus:outline-primary-400 placeholder:text-base placeholder:text-neutral-400 rounded-lg w-full"
             />
-            <span className="text-primary-200 text-right">
-              Forgot your password?
+            <input
+              type="password"
+              placeholder="Retype Password"
+              className="border-2 border-primary-400 px-4 py-3 focus:outline-dashed  focus:outline-primary-400 placeholder:text-base placeholder:text-neutral-400 rounded-lg w-full"
+            />
+            <span className="text-neutral-400 text-left text-xs">
+              6 or more characters, one number, one uppercase & one lower case.
             </span>
             <button className="w-full rounded-full bg-primary-400 text-white text-base py-3 hover:border hover:border-primary-400 hover:bg-white hover:text-primary-400">
-              Log in
+              Signup with Email
             </button>
           </div>
           <p className="text-neutral-500">
-            Don't have an account?{" "}
-            <Link href="/signup" className="text-primary-400">
-              Sign Up
+            Already have an account?{" "}
+            <Link href="/login" className="text-primary-400">
+              Log in
             </Link>
           </p>
           <p className="text-neutral-400">
-            By signing in with an account, you agree to <br /> Sciccor's{" "}
+            By signing up, you agree to <br /> Sciccor's{" "}
             <span className="text-neutral-500">
               Terms of Service, Privacy Policy{" "}
             </span>
-            and{" "}
-            <span className="text-neutral-500">Acceptable Use Policy. </span>
+            and <span className="text-neutral-500">Acceptable Use Policy.</span>
           </p>
         </div>
       </div>
@@ -66,4 +75,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
