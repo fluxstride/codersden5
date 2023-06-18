@@ -47,13 +47,13 @@ const Login = () => {
             </button>
           </div>
           <p className="text-neutral-500">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link href="/signup" className="text-primary-400">
               Sign Up
             </Link>
           </p>
           <p className="text-neutral-400">
-            By signing in with an account, you agree to <br /> Sciccor's{" "}
+            By signing in with an account, you agree to <br /> Sciccor&apos;s{" "}
             <span className="text-neutral-500">
               Terms of Service, Privacy Policy{" "}
             </span>
