@@ -63,7 +63,7 @@ const Signup = () => {
             </Link>
           </p>
           <p className="text-neutral-400">
-            By signing up, you agree to <br /> Sciccor's{" "}
+            By signing up, you agree to <br /> Sciccor&apos;s{" "}
             <span className="text-neutral-500">
               Terms of Service, Privacy Policy{" "}
             </span>
